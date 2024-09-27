@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Bolsa de trabajo ESEN</title>
+	<link href="css/aplicarestilo.css" rel="stylesheet"/>
+
+</head>
+<body>
+	<header>
+		<div>
+			<div>
+				<a href="index.html"><img src="images/logo2.png" title="logo" height="42px" /></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="ofertas.html">Ofertas</a></li>
+					<li><a href="consejos.html">Consejos</a></li>
+					<li class="activo"><a href="aplicar.html">Aplicar</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<article>
+			<div>
+				<form action="aplicar.php" method="POST">
+					
+					<label for="nombre">Nombre:</label><br>
+					<input type="text" id="nombre" name="nombre" required><br><br>
+
+					<label for="apellidos">Apellidos:</label><br>
+					<input type="text" id="apellidos" name="apellidos" required><br><br>
+
+					<label for="carnet">Carnet:</label><br>
+					<input type="text" id="carnet" name="carnet" required><br><br>
+
+					<label for="departamento">Departamento de residencia:</label><br>
+					<select id="departamento" name="departamento" required>
+						<option value="">Seleccionar</option>
+						<option value="Ahuachapán">Ahuachapán</option>
+						<option value="Cabañas">Cabañas</option>
+						<option value="Chalatenango">Chalatenango</option>
+						<option value="Cuscatlán">Cuscatlán</option>
+						<option value="La Libertad">La Libertad</option>
+						<option value="La Paz">La Paz</option>
+						<option value="La Unión">La Unión</option>
+						<option value="Morazán">Morazán</option>
+						<option value="San Miguel">San Miguel</option>
+						<option value="San Salvador">San Salvador</option>
+						<option value="San Vicente">San Vicente</option>
+						<option value="Santa Ana">Santa Ana</option>
+						<option value="Sonsonate">Sonsonate</option>
+						<option value="Usulután">Usulután</option>
+					</select><br><br>
+
+					<label for="edad">Edad:</label><br>
+					<input type="number" id="edad" name="edad" min="18" max="99" required><br><br>
+
+					<label>Género:</label><br>
+					<input type="radio" id="masculino" name="genero" value="masculino" required>
+					<label for="masculino">Masculino</label><br>
+					<input type="radio" id="femenino" name="genero" value="femenino" required>
+					<label for="femenino">Femenino</label><br><br>
+
+					<label for="fecha_nacimiento">Fecha de nacimiento:</label><br>
+					<input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+					<label for="telefono">Número de teléfono:</label><br>
+					<input type="tel" id="telefono" name="telefono" pattern="[0-9]{8}" required><br><br>
+
+					<label for="carrera">Carrera:</label><br>
+					<select id="carrera" name="carrera" required>
+						<option value="">Seleccionar</option>
+						<option value="Ingeniería de Software y Negocios Digitales">Ingeniería de Software y Negocios Digitales</option>
+						<option value="Ingeniería de Negocios">Ingeniería de Negocios</option>
+						<option value="Licenciatura en Economía y Negocios">Licenciatura en Economía y Negocios</option>
+						<option value="Licenciatura en Ciencias Jurídicas">Licenciatura en Ciencias Jurídicas</option>
+					</select><br><br>
+
+					<label for="pretension_salarial">Pretensión salarial:</label><br>
+					<input type="number" id="pretension_salarial" name="pretension_salarial" required><br><br>
+
+					<input type="submit" value="Enviar solicitud">
+				</form>
+			</div>
+		</article>
+	</section>
+	<footer>
+		<p>Creado por: Cristina Alejandra Guillén Serrano 20235929</p>
+	</footer>
+</body>
+</html>
